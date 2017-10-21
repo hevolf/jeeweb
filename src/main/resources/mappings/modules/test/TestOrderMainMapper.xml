@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jeeweb.modules.test.mapper.TestOrderMainMapper" >
+
+  <sql id="Base_Column_List" >
+    t.ID,
+    t.ORDERNO,
+    t.MONEY,
+    t.ORDERDATE,
+    t.CREATE_BY AS "createBy.id",
+    t.CREATE_DATE,
+    t.UPDATE_BY AS "updateBy.id",
+    t.UPDATE_DATE,
+    t.DEL_FLAG,
+    t.REMARKS
+  </sql>
+  
+</mapper>
